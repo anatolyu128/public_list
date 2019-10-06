@@ -15,3 +15,9 @@ Route::get("/", "PostController@index");
 Route::get("create-post", "PostController@create");
 Route::post('upload-post', "PostController@uploadPost");
 Route::get("delete/{id}", "PostController@delete");
+
+Route::get("/reg", "UserController@registrationForm");
+Route::get("/login", "UserController@login");
+
+Route::post("/confirm-registration", "UserController@validateNewUser");
+Route::post("/confirm-auth", "UserController@confirmAuth");

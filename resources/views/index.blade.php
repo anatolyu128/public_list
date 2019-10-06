@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Основная страница</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-<div class="container" style="padding-top: 30px;">
+@extends("layouts.layout")
+@section("content")
 
     <a href="create-post" class="btn btn-primary" style="margin-bottom: 30px;">Добавить задачу</a>
 
@@ -34,6 +28,4 @@
         @endforeach
     @endif
 
-</div>
-</body>
-</html>
+@endsection
