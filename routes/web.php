@@ -11,7 +11,7 @@
 |
 */
 
-Route::get("/", "DefaultController@index");
-Route::get("create-post", "DefaultController@create");
-Route::post('upload-post', "DefaultController@uploadPost");
-Route::get("delete/{id}", "DefaultController@delete");
+Route::get("/", "PostController@index");
+Route::get("create-post", "PostController@create");
+Route::post('upload-post', "PostController@uploadPost");
+Route::get("delete/{id}", "PostController@delete");

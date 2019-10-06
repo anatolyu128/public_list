@@ -7,7 +7,7 @@ use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class DefaultController extends Controller
+class PostController extends Controller
 {
     public function index(Request $request)
     {
