@@ -56,7 +56,6 @@ class DefaultController extends Controller
         } catch (\Exception $e) {
             echo $e;
         }
-        ///
         return redirect("/");
     }
 }
