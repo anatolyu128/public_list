@@ -19,7 +19,7 @@ class DefaultController extends Controller
     public function create()
     {
         return view("create-post");
-    } 
+    }
 
     public function uploadPost(Request $request)
     {
@@ -56,6 +56,7 @@ class DefaultController extends Controller
         } catch (\Exception $e) {
             echo $e;
         }
+        ///
         return redirect("/");
     }
 }
